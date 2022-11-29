@@ -1,10 +1,7 @@
-import { Request } from 'express';
+import { HttpRequest } from './http-request';
 
-export type HttpResponse = {
-    statusCode: number
-    body: any
-}
+import { HttpResponse } from './http-response';
 
 export interface Controller {
-    handle: (request: Request) => Promise<HttpResponse>
+    handle: (request: HttpRequest) => Promise<HttpResponse>
 }

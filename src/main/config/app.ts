@@ -1,7 +1,8 @@
-import express from 'express';
+import express, { Express } from 'express';
+import { setupRoutes } from './';
 
-
-export const setupApp = async () => {
+export const setupApp = (): Express => {
     const app = express();
-    //load routes
+    setupRoutes(app);
+    return app;
 }

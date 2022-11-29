@@ -1,7 +1,8 @@
 import { Express, Router } from 'express'
+import { employeeRoutes } from '../routes';
 
-export default (app: Express) => {
+export const setupRoutes = (app: Express) => {
     const router = Router();
     app.use('/api', router);
-    
+    employeeRoutes(router);
 }
