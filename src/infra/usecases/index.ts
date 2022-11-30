@@ -1,1 +1,1 @@
-export * from './check-token';
+export * from './check-token'

@@ -1,2 +1,2 @@
-export * from './add-employee-repository';
-export * from './load-employee';
+export * from './add-employee-repository'
+export * from './load-employee'

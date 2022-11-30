@@ -1,2 +1,2 @@
-export * from './db-add-employee';
-export * from './db-load-employee';
+export * from './db-add-employee'
+export * from './db-load-employee'

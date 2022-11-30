@@ -1,9 +1,9 @@
-import { AddEmployee } from '@/domain/usecases';
+import { AddEmployee } from '@/domain/usecases'
 
 export interface AddEmployeeRepository {
-    add: (data: AddEmployeeRepository.Params) => Promise<void>
+  add: (data: AddEmployeeRepository.Params) => Promise<void>
 }
 
 export namespace AddEmployeeRepository {
-    export type Params = AddEmployee.Params;
+  export type Params = AddEmployee.Params
 }

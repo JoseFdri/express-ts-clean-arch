@@ -1,5 +1,5 @@
-export type EmployeeModel = {
-    id: string
-    name: string
-    email: string
+export interface EmployeeModel {
+  id: string
+  name: string
+  email: string
 }
