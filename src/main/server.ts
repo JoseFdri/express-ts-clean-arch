@@ -1,11 +1,10 @@
 import 'module-alias/register'
-import { setupApp, env, logger } from "./config";
-import { MongoHelper } from '../infra/db';
+import { mongoHelper } from '@/infra/db';
+import { setupApp, env, logger } from "@/main/config";
 
 const { port, mongoUrl } = env;
 
-console.log(env)
-MongoHelper.connect(mongoUrl)
+mongoHelper.connect(mongoUrl)
     .then(() => {
         logger.info('MongoDB connected');
 
