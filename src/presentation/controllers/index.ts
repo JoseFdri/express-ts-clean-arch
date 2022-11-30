@@ -1,1 +1,2 @@
-export * from './add-employee.controller.';
+export * from './add-employees.controller';
+export * from './load-employees.controller';

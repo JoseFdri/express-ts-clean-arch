@@ -1,4 +1,4 @@
-import { AddEmployee  } from "@/domain/usecases/add-employee";
+import { AddEmployee  } from "@/domain/usecases";
 import { AddEmployeeRepository } from "@/data/protocols";
 
 export class DbAddEmployee implements AddEmployee {
