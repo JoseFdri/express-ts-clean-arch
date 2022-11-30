@@ -1,4 +1,4 @@
-import { HttpResponse } from '../protocols/http-response';
+import { HttpResponse } from '@/presentation/protocols';
 
 export const httpOk = <T>(data: T): HttpResponse => ({
     statusCode: 200,

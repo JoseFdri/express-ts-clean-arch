@@ -1,5 +1,5 @@
 import { Express, Router } from 'express'
-import { employeeRoutes } from '../routes';
+import { employeeRoutes } from '@/main/routes';
 
 export const setupRoutes = (app: Express) => {
     const router = Router();

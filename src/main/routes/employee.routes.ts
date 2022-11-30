@@ -1,8 +1,8 @@
 import { Router } from 'express'
 
-import { adaptRoute } from "../adapters";
-import { makeEmployeeController } from "../factories";
+import { adaptRoute } from "@/main/adapters";
+import { makeAddEmployeeController } from "@/main/factories";
 
 export const employeeRoutes = (router: Router): void => {
-    router.post('/employee', adaptRoute(makeEmployeeController()));
+    router.post('/employee', adaptRoute(makeAddEmployeeController()));
 }

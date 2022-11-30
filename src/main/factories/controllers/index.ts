@@ -1,1 +1,1 @@
-export * from './employee-controller.factory';
+export * from './add-employee-controller.factory';
