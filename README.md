@@ -46,3 +46,7 @@ I build this project from the scratch and I believe there are some improvements 
 4. Add layer for graphql compatibility
 5. Add endpoints to generate JWT tokens
 6. Implement Swagger for API doc.
+
+## Coverage
+Some lines are not covered due I didn't implement an endpoint to generate a JWT, but it's almost 100% covered.
+![alt text](./public/img/coverage.png "Coverage")

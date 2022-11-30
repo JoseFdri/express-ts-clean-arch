@@ -67,4 +67,15 @@ describe('Employee routes', () => {
     const expectedObj = expect.objectContaining({ name: expect.any(String), email: expect.any(String) })
     expect(response.body).toEqual([expectedObj])
   })
+
+  it('Should return server error without stack details', async () => {
+    await mongoHelper.disconnect();
+    const accessToken = sign({ id: 123 }, env.jwtSecret)
+    await request(app)
+      .get(employeesEndpoint)
+      .set('Authorization', accessToken)
+      .expect(500);
+    // prevent error when disconnecting after this test.
+    await mongoHelper.connect(env.mongoUrl)
+  })
 })
