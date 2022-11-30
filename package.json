@@ -4,7 +4,7 @@
   "description": "",
   "main": "./dist/main/server.js",
   "scripts": {
-    "test": "jest  --runInBand --forceExit --detectOpenHandles --verbose",
+    "test": "jest  --runInBand --forceExit --detectOpenHandles --verbose --coverage",
     "start:watch": "nodemon",
     "start-dev": "node -r ts-node/register -r dotenv/config ./src/main/server.ts",
     "build": "tsc"
